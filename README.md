@@ -8,11 +8,7 @@ This plugin lets you work with complex types such as structs or maps with unknow
 
 ## Usage
 
-1. Define your subfield suffix and subfield separators in the QueryBuilder options. The defaults are:
-```
-fieldSuffixForSubfield: '.*',
-fieldSubfieldSeparator: '.'
-```
+1. Define your subfield suffix and subfield separators in the QueryBuilder options. The defaults are: ```fieldSuffixForSubfield: '.*'``` and ```fieldSubfieldSeparator: '.' ```
 2. Add a ```show_subfield: true``` attribute to the filters that you wish to show a subfield for.
 3. Append your ```fieldSuffixForSubfield``` to each filter's id. This way you can use your filter without the suffix as another filter (since presumably the type of that filter is different from a subfield within it).
 
