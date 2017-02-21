@@ -4,7 +4,8 @@
  *  See the LICENSE file associated with the project for terms.
  */
 .query-builder .rule-container .rule-subfield-container {
-  // Inlining the rule-component mixin for now: @extend %rule-component;
+  /* Inlining the rule-component mixin for now */
+  @extend %rule-component;
   display: inline-block;
   margin: 0 5px 0 0;
   vertical-align: middle;
