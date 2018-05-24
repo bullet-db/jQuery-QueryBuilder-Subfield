@@ -24,6 +24,6 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/yahoo/jQuery-QueryBuilder-Subfield.git"
+    "url": "git://github.com/bullet-db/jQuery-QueryBuilder-Subfield.git"
   }
 }
