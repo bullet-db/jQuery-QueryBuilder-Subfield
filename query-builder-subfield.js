@@ -124,9 +124,10 @@
             var rule = e.value;
             if (rule.field) {
                 var split_field = rule.field.split(that.settings.fieldSubfieldSeparator);
-                if (split_field.length === 2) {
-                    rule.field = split_field[0];
-                    rule.subfield = split_field[1];
+                var length = split_field.length;
+                if (length >= 2) {
+                    rule.field = split_field.slice(0, -1).join(that.settings.fieldSubfieldSeparator);
+                    rule.subfield = split_field[length - 1];
                 }
             }
             e.value = rule;

@@ -1,6 +1,6 @@
 {
   "name": "jQuery-QueryBuilder-Subfield",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "authors": [{
     "name": "Weiyu Miao",
     "email": "wmiao@yahoo-inc.com"
@@ -12,7 +12,7 @@
   "description": "Adds a free-form text input to QueryBuilder filters to add arbitrary subfields to a filter",
   "main": "query-builder-subfield.js",
   "dependencies": {
-    "jQuery-QueryBuilder": "^2.4.0"
+    "jQuery-QueryBuilder": "^2.5.2"
   },
   "keywords": [
     "jquery",
