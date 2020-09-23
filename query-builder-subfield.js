@@ -126,8 +126,14 @@
                 var split_field = rule.field.split(that.settings.fieldSubfieldSeparator);
                 var length = split_field.length;
                 if (length >= 2) {
-                    rule.field = split_field.slice(0, -1).join(that.settings.fieldSubfieldSeparator);
-                    rule.subfield = split_field[length - 1];
+                    // Search the filters to make sure this field doesn't exist exactly. If so, don't subfield it
+                    var filter = e.builder.filters.find(function(filter) {
+                        return filter.id === rule.field;
+                    });
+                    if (filter) {
+                        rule.field = split_field.slice(0, -1).join(that.settings.fieldSubfieldSeparator);
+                        rule.subfield = split_field[length - 1];
+                    }
                 }
             }
             e.value = rule;
