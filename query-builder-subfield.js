@@ -130,7 +130,7 @@
                     var filter = e.builder.filters.find(function(filter) {
                         return filter.id === rule.field;
                     });
-                    if (filter) {
+                    if (!filter) {
                         rule.field = split_field.slice(0, -1).join(that.settings.fieldSubfieldSeparator);
                         rule.subfield = split_field[length - 1];
                     }
